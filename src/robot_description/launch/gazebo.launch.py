@@ -11,7 +11,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     share_dir = get_package_share_directory('robot_description')
-
+    config_file = os.path.join(share_dir, 'config', 'omni_controller.yaml')
     xacro_file = os.path.join(share_dir, 'urdf', 'robot.xacro')
     robot_description_config = xacro.process_file(xacro_file)
     robot_urdf = robot_description_config.toxml()
@@ -76,6 +76,28 @@ def generate_launch_description():
         executable='omni_control_node',
         output = 'screen'
     )
+
+    cntrl_mngr = Node(
+            package='controller_manager',
+            executable='ros2_control_node',
+            name='ros2_control_node',
+        )
+    
+    cntrl_spnr =  Node(
+            package='controller_manager',
+            executable='spawner',
+            name='controller_spawner',
+            arguments=['omni_control', '--controller-manager', 'ros2_control_node'],
+            output='screen'
+        )
+    
+    cntrl_spnr2 = Node(
+            package='controller_manager',
+            executable='controller_manager',
+            name='controller_manager',
+            output='screen'
+        )
+    
     return LaunchDescription([
         robot_state_publisher_node,
         joint_state_publisher_node,
@@ -84,4 +106,7 @@ def generate_launch_description():
         urdf_spawn_node,
         rviz_node,
         control_node,
+        cntrl_spnr,
+        cntrl_mngr,
+        cntrl_spnr2,
     ])
