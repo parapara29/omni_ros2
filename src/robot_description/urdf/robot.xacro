@@ -660,7 +660,7 @@
   <child link="base_link"/>
 </joint>
 <joint name="Revolute 34" type="continuous">
-  <origin xyz="0.042768 -0.079772 0.1438" rpy="0 0 0"/>
+  <origin xyz="0.037768 -0.079772 0.1438" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="wheel_1"/>
   <axis xyz="-1.0 0.0 0.0"/>
@@ -695,21 +695,21 @@
 </joint>
 
 <joint name="Revolute 42" type="continuous">
-  <origin xyz="0.242768 -0.279772 0.1438" rpy="0 0 0"/>
+  <origin xyz="0.242768 -0.284772 0.1438" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="wheel_2"/>
   <axis xyz="-0.0 -1.0 -0.0"/>
 </joint>
 
 <joint name="Revolute 43" type="continuous">
-  <origin xyz="0.442768 -0.079772 0.1438" rpy="0 0 0"/>
+  <origin xyz="0.447768 -0.079772 0.1438" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="wheel_3"/>
   <axis xyz="1.0 -0.0 -0.0"/>
 </joint>
 
 <joint name="Revolute 44" type="continuous">
-  <origin xyz="0.242768 0.120228 0.1438" rpy="0 0 0"/>
+  <origin xyz="0.242768 0.125228 0.1438" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="wheel_4"/>
   <axis xyz="0.0 1.0 0.0"/>
