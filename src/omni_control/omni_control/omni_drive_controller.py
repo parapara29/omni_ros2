@@ -5,6 +5,8 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Float64
 
+wheel_velocities = [0,0,0,0]
+
 class OmniDriveController(Node):
     def __init__(self):
         super().__init__('omni_drive_controller')
@@ -26,24 +28,11 @@ class OmniDriveController(Node):
         r = 0.21  # Wheel radius in meters
         R = 0.2   # Distance from the center of the robot to the wheel in meters
 
-        A = math.sin(omega + math.pi / 4)
-        B = math.cos(omega + math.pi / 4)
-        C = math.sin(omega + 3 * math.pi / 4)
-        D = math.cos(omega + 3 * math.pi / 4)
-        E = math.sin(omega + 5 * math.pi / 4)
-        F = math.cos(omega + 5 * math.pi / 4)
-        G = math.sin(omega + 7 * math.pi / 4)
-        H = math.cos(omega + 7 * math.pi / 4)
 
-        Vw = (1 / r) * np.array([
-            [-A, B, R],
-            [-C, D, R],
-            [-E, F, R],
-            [-G, H, R]
-        ])
-
-        wheel_velocities = Vw.dot(np.array([vx, vy, omega]))
-
+        wheel_velocities[0] = (vx*math.sin(math.pi/4            ) + vy*math.cos(math.pi/4            ) + R*omega)/r
+        wheel_velocities[1] = (vx*math.sin(math.pi/4 + math.pi/2) + vy*math.cos(math.pi/4 + math.pi/2) + R*omega)/r
+        wheel_velocities[2] = (vx*math.sin(math.pi/4 - math.pi)   + vy*math.cos(math.pi/4 - math.pi)   + R*omega)/r
+        wheel_velocities[3] = (vx*math.sin(math.pi/4 - math.pi/2) + vy*math.cos(math.pi/4 - math.pi/2) + R*omega)/r
         # Publish the calculated wheel velocities
         self.wheel1_pub.publish(Float64(data=wheel_velocities[0]))
         self.wheel2_pub.publish(Float64(data=wheel_velocities[1]))
@@ -58,3 +47,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+

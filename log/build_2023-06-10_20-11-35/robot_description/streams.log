@@ -1,0 +1,80 @@
+[0.869s] Invoking command in '/home/paradox/omni_r2_ws/omni_ros2/src/robot_description': PYTHONPATH=/home/paradox/omni_r2_ws/build/robot_description/prefix_override:/home/paradox/omni_r2_ws/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/robot_description build --build-base /home/paradox/omni_r2_ws/build/robot_description/build install --record /home/paradox/omni_r2_ws/build/robot_description/install.log --install-scripts $base/lib/robot_description --single-version-externally-managed
+[1.104s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.104s]   warnings.warn(
+[1.111s] running egg_info
+[1.112s] creating ../../../build/robot_description/robot_description.egg-info
+[1.112s] writing ../../../build/robot_description/robot_description.egg-info/PKG-INFO
+[1.112s] writing dependency_links to ../../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[1.113s] writing entry points to ../../../build/robot_description/robot_description.egg-info/entry_points.txt
+[1.113s] writing requirements to ../../../build/robot_description/robot_description.egg-info/requires.txt
+[1.113s] writing top-level names to ../../../build/robot_description/robot_description.egg-info/top_level.txt
+[1.113s] writing manifest file '../../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[1.115s] reading manifest file '../../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[1.116s] writing manifest file '../../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[1.116s] running build
+[1.116s] running build_py
+[1.116s] creating /home/paradox/omni_r2_ws/build/robot_description/build
+[1.116s] creating /home/paradox/omni_r2_ws/build/robot_description/build/lib
+[1.117s] creating /home/paradox/omni_r2_ws/build/robot_description/build/lib/robot_description
+[1.117s] copying robot_description/__init__.py -> /home/paradox/omni_r2_ws/build/robot_description/build/lib/robot_description
+[1.117s] running install
+[1.126s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.126s]   warnings.warn(
+[1.126s] running install_lib
+[1.127s] creating /home/paradox/omni_r2_ws/install/robot_description/lib/python3.10/site-packages/robot_description
+[1.127s] copying /home/paradox/omni_r2_ws/build/robot_description/build/lib/robot_description/__init__.py -> /home/paradox/omni_r2_ws/install/robot_description/lib/python3.10/site-packages/robot_description
+[1.127s] byte-compiling /home/paradox/omni_r2_ws/install/robot_description/lib/python3.10/site-packages/robot_description/__init__.py to __init__.cpython-310.pyc
+[1.127s] running install_data
+[1.128s] creating /home/paradox/omni_r2_ws/install/robot_description/share/ament_index
+[1.128s] creating /home/paradox/omni_r2_ws/install/robot_description/share/ament_index/resource_index
+[1.128s] creating /home/paradox/omni_r2_ws/install/robot_description/share/ament_index/resource_index/packages
+[1.128s] copying resource/robot_description -> /home/paradox/omni_r2_ws/install/robot_description/share/ament_index/resource_index/packages
+[1.128s] copying package.xml -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description
+[1.128s] creating /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/launch
+[1.128s] copying launch/display.launch.py -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/launch
+[1.129s] copying launch/gazebo.launch.py -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/launch
+[1.129s] creating /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/urdf
+[1.129s] copying urdf/robot.trans -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/urdf
+[1.129s] copying urdf/robot.gazebo -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/urdf
+[1.129s] copying urdf/materials.xacro -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/urdf
+[1.129s] copying urdf/robot.xacro -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/urdf
+[1.130s] creating /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.130s] copying meshes/roller_3_7.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.130s] copying meshes/wheel_3.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.130s] copying meshes/roller_2_7.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.130s] copying meshes/roller_4_4.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.130s] copying meshes/wheel_4.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.130s] copying meshes/roller_1_5.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.130s] copying meshes/roller_4_7.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.130s] copying meshes/roller_3_6.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.131s] copying meshes/wheel_1.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.131s] copying meshes/roller_4_1.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.131s] copying meshes/roller_3_1.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.131s] copying meshes/roller_2_2.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.132s] copying meshes/base_link.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.132s] copying meshes/roller_3_4.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.132s] copying meshes/roller_4_6.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.132s] copying meshes/roller_2_3.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.132s] copying meshes/roller_1_1.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.133s] copying meshes/roller_3_3.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.133s] copying meshes/roller_4_3.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.133s] copying meshes/roller_1_3.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.134s] copying meshes/roller_2_5.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.134s] copying meshes/roller_2_1.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.134s] copying meshes/roller_2_4.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.134s] copying meshes/camera_1.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.135s] copying meshes/roller_1_4.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.135s] copying meshes/roller_3_5.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.135s] copying meshes/roller_1_2.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.135s] copying meshes/wheel_2.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.135s] copying meshes/roller_1_6.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.136s] copying meshes/lidar_1.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.136s] copying meshes/roller_4_2.stl -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/meshes
+[1.136s] creating /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/config
+[1.136s] copying config/display.rviz -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/config
+[1.136s] copying config/omni_controller.yaml -> /home/paradox/omni_r2_ws/install/robot_description/share/robot_description/config
+[1.136s] running install_egg_info
+[1.138s] Copying ../../../build/robot_description/robot_description.egg-info to /home/paradox/omni_r2_ws/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info
+[1.139s] running install_scripts
+[1.160s] writing list of installed files to '/home/paradox/omni_r2_ws/build/robot_description/install.log'
+[1.200s] Invoked command in '/home/paradox/omni_r2_ws/omni_ros2/src/robot_description' returned '0': PYTHONPATH=/home/paradox/omni_r2_ws/build/robot_description/prefix_override:/home/paradox/omni_r2_ws/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/robot_description build --build-base /home/paradox/omni_r2_ws/build/robot_description/build install --record /home/paradox/omni_r2_ws/build/robot_description/install.log --install-scripts $base/lib/robot_description --single-version-externally-managed

@@ -1,0 +1,23 @@
+[0.883s] Invoking command in '/home/paradox/omni_r2_ws/src/omni_control': PYTHONPATH=/home/paradox/omni_r2_ws/build/omni_control/prefix_override:/home/paradox/omni_r2_ws/install/omni_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/omni_control build --build-base /home/paradox/omni_r2_ws/build/omni_control/build install --record /home/paradox/omni_r2_ws/build/omni_control/install.log --single-version-externally-managed
+[1.143s] running egg_info
+[1.144s] writing ../../build/omni_control/omni_control.egg-info/PKG-INFO
+[1.145s] writing dependency_links to ../../build/omni_control/omni_control.egg-info/dependency_links.txt
+[1.145s] writing entry points to ../../build/omni_control/omni_control.egg-info/entry_points.txt
+[1.145s] writing requirements to ../../build/omni_control/omni_control.egg-info/requires.txt
+[1.145s] writing top-level names to ../../build/omni_control/omni_control.egg-info/top_level.txt
+[1.147s] reading manifest file '../../build/omni_control/omni_control.egg-info/SOURCES.txt'
+[1.148s] writing manifest file '../../build/omni_control/omni_control.egg-info/SOURCES.txt'
+[1.148s] running build
+[1.148s] running build_py
+[1.148s] running install
+[1.149s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.149s]   warnings.warn(
+[1.149s] running install_lib
+[1.151s] running install_data
+[1.151s] running install_egg_info
+[1.153s] removing '/home/paradox/omni_r2_ws/install/omni_control/lib/python3.10/site-packages/omni_control-0.0.0-py3.10.egg-info' (and everything under it)
+[1.153s] Copying ../../build/omni_control/omni_control.egg-info to /home/paradox/omni_r2_ws/install/omni_control/lib/python3.10/site-packages/omni_control-0.0.0-py3.10.egg-info
+[1.154s] running install_scripts
+[1.177s] Installing omni_control_node script to /home/paradox/omni_r2_ws/install/omni_control/lib/omni_control
+[1.178s] writing list of installed files to '/home/paradox/omni_r2_ws/build/omni_control/install.log'
+[1.223s] Invoked command in '/home/paradox/omni_r2_ws/src/omni_control' returned '0': PYTHONPATH=/home/paradox/omni_r2_ws/build/omni_control/prefix_override:/home/paradox/omni_r2_ws/install/omni_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/omni_control build --build-base /home/paradox/omni_r2_ws/build/omni_control/build install --record /home/paradox/omni_r2_ws/build/omni_control/install.log --single-version-externally-managed

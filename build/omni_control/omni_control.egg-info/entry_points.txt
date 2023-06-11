@@ -1,0 +1,3 @@
+[console_scripts]
+omni_control_node = omni_control.omni_drive_controller:main
+
