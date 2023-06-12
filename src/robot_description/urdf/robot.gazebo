@@ -4,12 +4,11 @@
 <xacro:property name="body_color" value="Gazebo/Silver" />
 <xacro:property name="laser_visual"  value="true"/>
 <gazebo>
-  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"/>
+  <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so"/>
   <!-- <robot_param>robot_description</robot_param> -->
-  <!-- <robot_namespace>robot</robot_namespace> -->
+  <robot_namespace>/robot</robot_namespace>
   <!-- <robot_param_node>robot_state_publisher</robot_param_node> -->
-  <!-- <parameters>$(find robot_description)/config/omni_controller.yaml</parameters> -->
-
+  <parameters>/home/user/omni_ros2/src/robot_description/config/omni_controller.yaml</parameters>
 </gazebo>
 <gazebo reference="base_link">
   <material>${body_color}</material>
@@ -274,5 +273,41 @@
   <hardware>
     <plugin>gazebo_ros2_control/GazeboSystem</plugin>
   </hardware>
+  <joint name="Revolute_34">
+      <command_interface name="position">
+        <!-- <param name="min">${steer_limlow}</param>
+        <param name="max">${steer_limhigh}</param> -->
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+    <joint name="Revolute_42">
+      <command_interface name="position">
+        <!-- <param name="min">${steer_limlow}</param>
+        <param name="max">${steer_limhigh}</param> -->
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+    <joint name="Revolute_43">
+      <command_interface name="position">
+        <!-- <param name="min">${steer_limlow}</param>
+        <param name="max">${steer_limhigh}</param> -->
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+    <joint name="Revolute_44">
+      <command_interface name="position">
+        <!-- <param name="min">${steer_limlow}</param>
+        <param name="max">${steer_limhigh}</param> -->
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
 </ros2_control>
 </robot>

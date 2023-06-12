@@ -82,17 +82,18 @@ def generate_launch_description():
     cntrl_mngr = Node(
             package='controller_manager',
             executable='ros2_control_node',
-            parameters=[robot_urdf,config_file],
+            parameters=[{'robot_description': robot_urdf}
+                        ,config_file],
             name='ros2_control_node',
         )
     
-    # cntrl_spnr =  Node(
-    #         package='controller_manager',
-    #         executable='spawner',
-    #         name='controller_spawner',
-    #         arguments=['omni_control', '--controller-manager', 'ros2_control_node'],
-    #         output='screen'
-    #     )
+    cntrl_spnr =  Node(
+            package='controller_manager',
+            executable='spawner',
+            name='controller_spawner',
+            arguments=['omni_control_node', '--controller-manager', 'ros2_control_node'],
+            output='screen'
+        )
     
     # cntrl_spnr2 = Node(
     #         package='controller_manager',
@@ -105,13 +106,11 @@ def generate_launch_description():
         gazebo_server,
         gazebo_client,
         robot_state_publisher_node,
-        ExecuteProcess(
-            cmd=['ros2', 'control', 'load_controller', '--set-state', 'active', 'forward_velocity_controller'], output='screen'
-        ),
         joint_state_publisher_node,
         urdf_spawn_node,
         rviz_node,
         control_node,
+        # cntrl_mngr,
         # cntrl_spnr,
         # cntrl_spnr2,
     ])
